@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PAGINA DE PRESENTACIÓN DE QUIMICA</title>
+     <!--Esto importa el código CSS-->
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/headerfooter.css">
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/fondoINDEX.css"> 
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/containers/container1.css"> 
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/containers/container2.css">
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/animaciones/animaciones.css">
+    <link rel="stylesheet" href="CÓDIGOS/CÓDIGO CSS/index/responsive.css">
+</head>
+<body> <!--Por ahora, esqueleto, en css acomodamos la posición de todo el html y estilos.-->
+    <header id="titulo"> <!--Este es el borde o marco de arriba.-->
+        <h1 data-key="titulo_principal">PROYECTO DE CIENCIAS INT<br>PÁGINA WEB</h1>       
+        <section class="move">
+            <article class="idioma">
+                <button id="EN"aria-label="Cambiar idioma a inglés">EN</button>
+                <button id="SP"aria-label="Cambiar idioma a español">SP</button>
+            </article>
+            <img src="MULTIMEDIA/IMAGENES/LOGO_INSIGNIA/id_escudo.jpg" alt="escudo del id" id="img1"/>
+            <img src="MULTIMEDIA/IMAGENES/LOGO_INSIGNIA/id_logo.png" alt="logo del id" id="img2"/>
+        </section>
+        <section class="botom">
+                <a id="a1" href="CÓDIGOS/SUBHTMLS/sistema si.html" data-key="menu_si">Unidades del SI</a>
+                <a id="a2" href="CÓDIGOS/SUBHTMLS/experimento.html" data-key="menu_jabones">Experimento de Jabones</a>
+                <a id="a3" href="CÓDIGOS/SUBHTMLS/un poco más.html" data-key="menu_mas">Un poco más</a> <!--por si acaso ponemos un link aqui o algo.-->
+        </section>
+    </header>
+<div class="fondo1">
+    <section class="container1">
+        <article class="presentacion">
+            <h1 id="presentaciontxt" data-key="presentacion_titulo">PRESENTACIÓN</h1>
+            <h1 data-key="ministerio">MINISTERIO DE EDUCACIÓN<br>INSTITUTO DAVID</h1>
+            <h1 data-key="bachiller">BACHILLER TECNOLÓGICO<br>2025</h1>
+            <h3 data-key="elaborado_por">
+                ELABORADO POR: 
+                <br>Juan Soto
+                <br>Sofia Vergara
+                <br>Samuel Cedeño
+                <br>Rodney Gonzáles
+                <br>Gabriel Rosario
+            </h3>
+            <h3 data-key="profesora">PROFESORA: Zulma Gómez</h3>
+            <h3 data-key="grado">Grado: 10°M</h3>
+        </article>
+        <article class="introduccion">
+            <h1 data-key="intro_titulo">INTRODUCCIÓN A LA WEB</h1>
+            <p data-key="intro_texto">
+                Esta página web es un proyecto de ciencias integradas que tiene como objetivo presentar información sobre el sistema internacional de unidades (SI).
+            </p>
+        </article>
+    </section>
+</div>
+    <section class="container2">
+        <h2 data-key="contenidos_titulo">Contenidos conceptuales</h2>
+        <button class="accordion" data-key="boton_si">SISTEMA SI</button>
+        <div class="panel">
+            <article class="panelContent" > 
+                <div class="panelImagenP">
+                    <img id="panelSI" src="MULTIMEDIA/IMAGENES/index_img/panel/SI/SI_sin_fondo.png" />
+                </div>
+                <h2 data-key="si_intro_titulo">Introducción al Sistema Internacional (SI) y la base para comprenderlo</h2>
+                <h3 data-key="si_intro_subtitulo">Introducción</h3>
+                <ul>
+                    <li data-key="que_es_medir">Qué es medir.</li>
+                    <li data-key="fundamentos_medicion">Fundamentos de la medición.</li>
+                    <li data-key="unidades">Unidades.</li>
+                    <li data-key="magnitudes">Magnitudes.</li>
+                    <li data-key="equivalencias">Equivalencias.</li>
+                </ul>
+                <h3 data-key="masa-t">Masa y peso</h3>
+                <ul>
+                    <li data-key="masa-def">Definición.</li>
+                    <li data-key="masa-dif">Diferencia entre masa y peso.</li>
+                    <li data-key="masa-med">Cómo medirlos.</li>    
+                    <li data-key="masa-ej">Ejemplos prácticos.</li>
+                </ul>
+                <h3 data-key="dens-t">Densidad</h3>
+                <ul>
+                    <li data-key="dens-def">¿Qué es?</li>
+                    <li data-key="dens-form">Fórmula y cálculo.</li>
+                    <li data-key="dens-ej">Ejemplos con distintos materiales.</li>
+                </ul>
+                <h3 data-key="temp-t">Temperatura</h3>
+                <ul>
+                    <li data-key="temp-def">¿Qué es?</li>
+                    <li data-key="temp-esc">Escalas.</li>
+                    <li data-key="temp-conv">Conversión entre escalas.</li>
+                    <li data-key="temp-ej">Ejemplos prácticos.</li>
+                </ul>
+            </article>
+        </div>
+    <button class="accordion" data-key="jabon-btn">EXPERIMENTO DE LOS JABONES</button>
+        <div class="panel">
+            <article class="panelContent" >
+                <div class="panelImagenP">
+                    <img id="panelJabon" src="MULTIMEDIA/IMAGENES/index_img/panel/JABONES/JABON.jpeg" />
+                </div>
+                <h2 data-key="jabon-t">Elaboración por Saponificación con NaOH</h2>
+                <h3 data-key="jabon-fund">Fundamentos y contexto</h3>
+                <ul>
+                    <li data-key="jabon-intro">Introducción: de qué trata el proyecto.</li>
+                    <li data-key="jabon-obj">Objetivo general y específicos.</li>
+                    <li data-key="jabon-teo">Marco teórico.</li>
+                    <li data-key="jabon-imp">Importancia y expectativas del experimento.</li>
+                </ul>
+                    <h3 data-key="jabon-ejec">Ejecución del experimento</h3>
+                <ul>
+                    <li data-key="jabon-intro">Introducción: de qué trata el proyecto.</li>
+                    <li data-key="jabon-obj">Objetivo general y específicos.</li>
+                    <li data-key="jabon-teo">Marco teórico.</li>
+                    <li data-key="jabon-imp">Importancia y expectativas del experimento.</li>
+                </ul>
+                    <h3 data-key="jabon-obs">Observaciones, análisis y conclusiones</h3>
+                <ul>
+                    <li data-key="jabon-camb">Cambios físicos y químicos observados.</li>
+                    <li data-key="jabon-exp">Explicación científica de cada cambio.</li>
+                    <li data-key="jabon-comp">Comparación de resultados.</li>
+                    <li data-key="jabon-conc">Conclusiones finales y aprendizaje.</li>
+                    <li data-key="jabon-mej">Posibles mejoras y aplicaciones.</li>
+                </ul>
+            </article>
+        </div>
+        <button class="accordion" data-key="webgrafia_titulo">WEBGRAFÍAS</button>
+        <div class="panel">
+            <article class="panelContent">
+                <div class="panelImagenP">
+                    <img id="panelWebgrafia" src="MULTIMEDIA/IMAGENES/index_img/panel/WEBGRAFIAS/Wikipedia-Logo-2003.png" >
+                </div>
+                <h2 data-key="webgrafia_subtitulo">Webgrafías del SI y de la elaboración de jabones.</h2>
+                <h3 data-key="webgrafia_si_titulo">SISTEMA INTERNACIONAL (SI)</h3>
+                <ul>
+                    <li data-key="web_si_1">Wikipedia. Sistema Internacional de Unidades. Disponible en: <a href="https://es.wikipedia.org/wiki/Sistema_Internacional_de_Unidades">https://es.wikipedia.org/wiki/Sistema_Internacional_de_Unidades</a></li>
+                    <li data-key="web_si_2">Instituto Nacional de Metrología de España (CEM). Magnitudes físicas y unidades. Disponible en: <a href="https://www.cem.es/">https://www.cem.es/</a></li>
+                    <li data-key="web_si_3">Khan Academy. Masa y peso. Disponible en: <a href="https://es.khanacademy.org/science/physics">https://es.khanacademy.org/science/physics</a></li>
+                    <li data-key="web_si_4">Wikipedia. Densidad. Disponible en: <a href="https://es.wikipedia.org/wiki/Densidad">https://es.wikipedia.org/wiki/Densidad</a></li>
+                    <li data-key="web_si_5">Universidad Nacional Autónoma de México (UNAM). Volumen y métodos de medición. Disponible en: <a href="https://www.unam.mx/">https://www.unam.mx/</a></li>
+                    <li data-key="web_si_6">Wikipedia. Temperatura. Disponible en: <a href="https://es.wikipedia.org/wiki/Calor">https://es.wikipedia.org/wiki/Calor</a></li>
+                    <li data-key="web_si_7">National Institute of Standards and Technology (NIST). Units and Measurement Standards. Disponible en: <a href="https://www.nist.gov/">https://www.nist.gov/</a></li>
+                </ul>
+                <h3 data-key="webgrafia_jabon_titulo">ELABORACIÓN DE JABONES</h3>
+                <ul>
+                    <li data-key="web_jabon_1">Wikipedia. Saponificación. Disponible en: <a href="https://es.wikipedia.org/wiki/Saponificación">https://es.wikipedia.org/wiki/Saponificación</a></li>
+                    <li data-key="web_jabon_2">Ecología Verde. Cómo hacer jabón artesanal. Disponible en: <a href="https://www.ecologiaverde.com/como-hacer-jabon-artesanal/">https://www.ecologiaverde.com/como-hacer-jabon-artesanal/</a></li>
+                    <li data-key="web_jabon_3">Quimitube. Reacción de saponificación: explicación y ejemplos. Disponible en: <a href="https://www.quimitube.com/">https://www.quimitube.com/</a></li>
+                    <li data-key="web_jabon_4">Hacer Jabón. Guía básica para la elaboración de jabón casero. Disponible en: <a href="https://hacerjabon.com/">https://hacerjabon.com/</a></li>
+                    <li data-key="web_jabon_5">ScienceDirect. Soap manufacture and saponification process. Disponible en: <a href="https://www.sciencedirect.com/">https://www.sciencedirect.com/</a></li>
+                </ul>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <section>
+            <article>
+                <a id="correo" href="mailto:diegomoran399@gmail.com" data-key="contacto">Click para contactarnos al correo</a>
+                <h2 data-key="gracias">GRACIAS POR VISITAR NUESTRA PÁGINA</h2>
+                <a id="volver" href="#titulo" data-key="volver_arriba">Volver arriba</a>
+            </article>
+        </section>
+    </footer>
+<script src="CÓDIGOS/CÓDIGO JAVA/java_index/containers/01-containerINDEX.js"></script>
+<script src="CÓDIGOS/CÓDIGO JAVA/java_index/animaciones/01-animaciones.js"></script>
+<script src="CÓDIGOS/CÓDIGO JAVA/java_index/TRADUCCIONES/01-traduccion.js"></script>
+</body>
+</html>

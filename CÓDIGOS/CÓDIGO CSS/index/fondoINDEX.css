@@ -1,0 +1,33 @@
+.fondo1 {
+    background-image: url("../../../MULTIMEDIA/IMAGENES/index_img/fondos/fondoINDEX/fondo1.png");
+    width: 100%;
+    min-height: 500px; /* altura mínima */
+    height: auto; /* se adapta al contenido */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    padding-top: 2rem;
+    border-bottom: 3px solid rgb(5, 94, 150);
+    position: relative;
+}
+
+.fondo1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajusta el 0.4 para más/menos oscuridad */
+    z-index: 0;
+}
+
+/* Contenido encima del fondo oscuro */
+.fondo1 > * {
+    position: relative;
+    z-index: 1;
+}

@@ -1,0 +1,73 @@
+.container2 {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 2rem;
+}
+
+/* Botones del acordeón */
+.accordion {
+    background-color: #056096;
+    color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.accordion:hover {
+    background-color: #044b73;
+}
+
+/* Contenido oculto por defecto */
+.panel {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 14px;
+    border-radius: 5px;
+}
+
+/* Estilo cuando está activo */
+.panel p, .panel ul {
+    margin: 10px 0;
+}
+
+.panel ul {
+    padding-left: 20px;
+}
+
+.panelContent {
+    padding-bottom: 30px;
+}
+
+.panelImagenP{
+    float: right;
+}
+
+.container2 #panelSI {
+    height: 400px;
+    margin-top: 6rem;
+    margin-right: 4rem;
+}
+
+.container2 #panelJabon {
+    height: 360px;
+    margin-top: 3.6rem;
+    margin-right: 8rem;
+    border-radius: 10px;
+}
+
+.container2 #panelWebgrafia {
+    height: 200px;
+    margin-top: 6rem;
+    margin-right: 4rem;
+}

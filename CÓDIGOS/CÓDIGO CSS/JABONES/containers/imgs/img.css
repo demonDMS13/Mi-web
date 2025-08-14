@@ -1,0 +1,90 @@
+#img_jabones {
+    width: 800px;
+    height: 600px;
+}
+
+#img_saponificacion {
+    width: 700px;
+    height: 400px;
+}
+
+#materiales_balanza {
+    width: 300px;
+    height: 500px;
+}
+
+#materiales_cuchara {
+    width: 300px;
+    height: 500px;
+}
+
+.agrup #sosaAgua {
+    width: 300px;
+    height: 200px;
+}
+
+.agrup .videoAgua {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px; /* opcional para esquinas redondeadas */
+}
+
+#aceiteV {
+    width: 300px;
+    height: 500px;
+}
+
+.videoAceiteV {
+    width: 300px;
+    height: 500px;
+}
+
+#sosaB {
+    width: 300px;
+    height: 500px;
+}
+
+.videoSosaB {
+    width: 300px;
+    height: 500px;
+}
+
+#vSosaMolde {
+    width: 300px;
+    height: 400px;
+}
+
+#vSosaMolde2 {
+    width: 300px;
+    height: 400px;
+}
+
+.videoAroma {
+    width: 400px;
+    height: 400px;
+}
+
+#sosaCurado {
+    width: 300px;
+    height: 400px;
+}
+
+.videoSosaCurado {
+    width: 300px;
+    height: 400px;   
+}
+
+#estilo1 {
+    width: 200px;
+    height: 400px;
+}
+
+#estilo2 {
+    width: 200px;
+    height: 400px;
+}
+
+#estilo3 {
+    width: 200px;
+    height: 400px;
+}

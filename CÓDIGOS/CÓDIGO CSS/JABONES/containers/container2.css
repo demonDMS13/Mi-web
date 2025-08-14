@@ -1,0 +1,62 @@
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap; /* Para que bajen a otra fila si no caben */
+}
+
+.container2 img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.latex1 {
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+}
+
+.latex1 {
+    max-width: 100%;
+    overflow-x: auto; /* Si es muy ancho, agrega scroll horizontal */
+}
+
+.latex1 mjx-container {
+    font-size: 1.2em; /* Tamaño base */
+}
+
+@media (max-width: 600px) {
+    .latex1 mjx-container {
+        font-size: 0.9em; /* Más pequeño en pantallas chicas */
+    }
+}
+
+.agrup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre figuras */
+    flex-wrap: wrap; /* Para que bajen a otra fila si no caben */
+}
+
+.agrup video {
+    display: inline-block;/* Para que no ocupe todo el ancho */
+    text-align: center;    /* Centra la imagen y el pie */
+}
+
+
+
+figure {
+    display: inline-block; /* Para que no ocupe todo el ancho */
+    text-align: center;    /* Centra la imagen y el pie */
+    margin: 1rem;
+    padding: 0;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.3rem;
+    font-style: italic;
+}

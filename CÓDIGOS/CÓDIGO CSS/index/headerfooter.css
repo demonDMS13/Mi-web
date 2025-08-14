@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #bbbbbb;
+}
+
+header {
+    display:flex;
+    align-items: center;
+    background-color:rgb(5, 94, 150);
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    color: azure;
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+    text-shadow: 0.2px 2px 5px;
+}
+
+
+
+header a {
+    display: flex;
+    transition: color 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color:aliceblue;
+    font-size: 20px;
+    margin-left: 14px;
+}
+/** underline*/
+header #a1:hover {
+    color: #519762; 
+}
+
+header #a1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #519762;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+header #a1:hover::after {
+    width: 100%;
+    left: 0;
+}
+/** * efecto de sombreado de el segundo link y de underline.
+ */
+header #a2:hover {
+    color: peru;
+}
+
+header #a2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: peru;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+header #a2:hover::after {
+    width: 100%;
+    left: 0;
+}
+/** * efecto de sombreado de el tercer link y de underline.
+ */
+header #a3:hover {
+    color: rgb(179, 31, 31);;
+}
+
+header #a3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(179, 31, 31);;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+header #a3:hover::after {
+    width: 100%;
+    left: 0;
+}
+/** * contenedor que pone a la derecha e la pagina los links.
+ */
+header .botom {
+    position: relative;
+    right: 20px;
+}
+
+.idioma {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+header img {
+    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.move{
+    display:flex;
+    margin-right: 40px;
+}
+
+footer article {
+    display:flex;
+    background-color: rgb(5, 94, 150);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: azure;
+    font-size: 2rem;
+    margin: 0;
+}
+
+footer #correo {
+    transition: color 0.6 ease;
+    color: azure;
+    display:flex;
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+}
+
+footer #correo:hover {
+    color: rgb(91, 190, 190);
+}
+
+#correo::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(91, 190, 190);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+#correo:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+footer h2 {
+    color: azure;
+    display: flex;
+    text-shadow: 0.2px 1px 3px;
+}
+
+footer #volver {
+    transition: background-color 0.5s ease, color 0.8s ease;
+    display:flex;
+    text-decoration: none;
+    position: absolute;
+    right: 30px;
+    border-radius: 10px;
+    background-color: azure;
+    color: rgb(5, 94, 150);
+    padding: 10px;
+}
+
+#volver:hover {
+    background-color:darkslategrey;
+    color: azure;
+}
+
+
+

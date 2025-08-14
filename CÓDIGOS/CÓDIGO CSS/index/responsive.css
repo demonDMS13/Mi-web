@@ -1,0 +1,139 @@
+/* ===============================
+   responsive.css optimizado
+   -------------------------------
+   Header, fondo, presentación, introducción y general
+   =============================== */
+
+/* ---- Header flexible ---- */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+header > * { min-width: 0; }
+header h1 {
+    flex: 1 1 auto;
+    margin-left: 20px;
+    font-size: 2.4rem;
+}
+header .move,
+header .botom {
+    flex: 0 1 auto;
+}
+
+/* ---- Fondo con overlay ---- */
+.fondo1 {
+    position: relative;
+    min-height: auto;
+    height: auto !important;
+}
+.fondo1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+.fondo1 > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---- Imágenes en container2 ---- */
+.container2 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ---- Presentación e introducción ---- */
+.presentacion, .introduccion {
+    max-width: 900px;
+    overflow-wrap: break-word;
+    height: auto !important;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ================== Media Queries ================== */
+
+/* --- Laptops medianas/grandes --- */
+@media (max-width: 1199px) {
+    header h1 { font-size: 2.1rem; }
+    header img { width: 80px; height: 80px; }
+    .presentacion, .introduccion { max-width: 80%; }
+}
+
+/* --- Laptops pequeñas / tablets horizontales --- */
+@media (max-width: 900px) {
+    header {
+        gap: 0.3rem;
+        padding: 0.4rem 0.8rem;
+    }
+    header h1 { font-size: 1.9rem; margin-left: 10px; }
+    header img { width: 70px; height: 70px; }
+    .presentacion, .introduccion { max-width: 85%; font-size: 0.95rem; }
+}
+
+/* --- Tablets verticales y pantallas medianas --- */
+@media (max-width: 768px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    header img { width: 60px; height: 60px; }
+    .idioma { margin: 10px auto; gap: 8px; }
+    header .move,
+    header .botom {
+        flex: 1 1 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0.5rem 0;
+        gap: 12px;
+    }
+
+    .fondo1 { padding: 1.5rem 1rem; background-position: center; }
+
+    #presentaciontxt { font-size: 1.6rem; }
+    .presentacion, .introduccion {
+        max-width: 90%;
+        padding: 0 1rem;
+    }
+    .introduccion h1 { font-size: 1.4rem; }
+    .introduccion p { font-size: 1rem; text-align: center; }
+}
+
+/* --- Móviles pequeños --- */
+@media (max-width: 480px) {
+    header h1 { font-size: 1.4rem; }
+    header img { width: 50px; height: 50px; }
+    .idioma { gap: 5px; }
+    .introduccion p { font-size: 0.9rem; }
+    .presentacion h3,
+    .introduccion h3 { font-size: 0.9rem; }
+    .presentacion, .introduccion {
+        max-width: 95%;
+        font-size: 0.9rem;
+    }
+    header .botom {
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+    }
+    header .botom a {
+        width: 90%;
+        text-align: center;
+    }
+}

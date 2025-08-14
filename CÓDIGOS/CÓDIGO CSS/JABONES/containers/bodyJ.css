@@ -1,0 +1,62 @@
+.containerJ {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.containerJ article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.containerJ article {
+    background: white;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    line-height: 1.8;
+}
+
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
+section article h2 {
+    font-size: 2.4rem;    
+    border-bottom: 2px solid #c0854a;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    color: rgb(192, 133, 74);
+}
+
+section article h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+section article p {
+    text-align: justify;
+    font-size: 25px;
+}
+
+section article h3 {
+    font-size:1.8rem;
+    text-decoration: underline brown;
+    text-align: justify;
+}
+
+section article li {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+}
+
+section article ul {
+    padding-left: 1.5rem;
+}
+
+section article li::marker {
+    color: #c0854a;
+}

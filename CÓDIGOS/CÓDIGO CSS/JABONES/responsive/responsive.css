@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c0854a;
+    color: white;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header img.logo {
+    height: 50px;
+}
+
+header .idiomas {
+    display: flex;
+    gap: 5px;
+}
+
+header h1 {
+    flex: 1 1 100%;
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    header h1 {
+        flex: unset;
+        text-align: left;
+        margin: 0;
+    }
+}

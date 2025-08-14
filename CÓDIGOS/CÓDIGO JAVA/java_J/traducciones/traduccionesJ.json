@@ -1,0 +1,184 @@
+{
+  "es": {
+    "title_subhtml": "EXPERIMENTO DE JABONES",
+    "volver_ppal": "Volver a la página principal",
+    "expj_titulo": "EXPERIMENTO DE JABONES",
+
+    "fund_tit": "Fundamentos teóricos y objetivos del experimento",
+    "fund_intro": "El presente proyecto consiste en la elaboración de jabón artesanal mediante el proceso de saponificación usando hidróxido de sodio (NaOH). El objetivo principal es comprender, de manera práctica, cómo ocurre esta reacción química y cómo se transforma una mezcla de grasas o aceites en un producto útil y seguro para la higiene personal.",
+    "marco_tit": "Marco teórico:",
+    "marco_p1": "La saponificación es una reacción química de tipo hidrólisis básica, en la cual los triglicéridos (grasas o aceites) reaccionan con una base fuerte (en este caso, NaOH) para producir glicerina y jabón, que son sales sódicas de ácidos grasos. La ecuación general de la reacción puede representarse como:",
+    "marco_p2": "Este proceso es exotérmico y requiere precaución, ya que la disolución del NaOH en agua libera gran cantidad de calor.<br>Históricamente, el jabón se elaboraba con cenizas (fuente de hidróxido) y grasas animales, siendo un producto fundamental para la higiene. Hoy en día, el jabón artesanal sigue siendo apreciado por sus propiedades humectantes y por no contener aditivos sintéticos agresivos.",
+
+    "obj_tit": "Objetivos específicos:",
+    "obj1": "Reconocer el papel del NaOH como base fuerte en la reacción de saponificación.",
+    "obj2": "Analizar los cambios físicos y químicos que ocurren durante el proceso.",
+    "obj3": "Aplicar mediciones precisas para asegurar un producto final equilibrado.",
+    "obj4": "Desarrollar habilidades de manipulación segura de reactivos corrosivos.",
+
+    "conceptos_tit": "Conceptos clave:",
+    "c1_base": "<b>Base fuerte:</b> Sustancia que libera iones hidroxilo (OH⁻) en solución y neutraliza ácidos.",
+    "c2_trigli": "<b>Triglicéridos:</b> Moléculas formadas por glicerol y tres ácidos grasos.",
+    "c3_exoterm": "<b>Reacción exotérmica:</b> Proceso que libera energía en forma de calor.",
+    "c4_curado": "<b>Curado del jabón:</b> Período de reposo que permite completar la reacción y evaporar el exceso de agua.",
+
+    "proc_tit": "Procedimiento experimental:",
+    "mat_tit": "Materiales:",
+    "mat1": "NaOH (sosa cáustica).",
+    "mat2": "Aceite comestible usado o nuevo (colado y libre de suciedad) 1L.",
+    "mat3": "Agua.",
+    "mat4": "Aroma de eucalipto.",
+    "mat5": "Recipiente resistente al calor.",
+    "mat6": "Cuchara de plástico de 15 ml (para la experiencia en casa).",
+    "mat7": "Balanza de dos platillos (usada en el laboratorio para medir la sosa con precisión).",
+    "mat8": "Batidor o paleta de madera/plástico.",
+    "mat9": "Moldes para jabón.",
+    "mat10": "Guantes y gafas de seguridad.",
+
+    "dif_tit": "Diferencias entre laboratorio y casa:",
+    "dif_p1": "En el laboratorio, la medición del NaOH se simulo con bircabonato de sodio y una balanza de dos platillos para obtener valores exactos en gramos. En casa, se replicó el experimento usando una cuchara de plástico de 15 ml como referencia por falta de la balanza de dos platillos, lo que resultó menos preciso pero suficiente para fines demostrativos.",
+
+    "fig_balanza_cap": "Balanza de dos brazos",
+    "fig_cuchara_cap": "cuchara de 15ml",
+
+    "pasos_tit": "Pasos:",
+    "paso1": "<b>Preparación de la solución de NaOH:</b> En un recipiente resistente, se vertió cuidadosamente el NaOH en el agua (nunca al revés) para evitar reacciones violentas. Se observó una liberación inmediata de calor y vapor.",
+    "cap_sosa_agua": "Sosa y agua",
+    "cap_disolviendo_sosa": "Disolviendo la sosa",
+
+    "paso2": "<b>Mezcla con aceite:</b> Una vez que la temperatura bajó un poco, se incorporó el aceite, comenzando a agitar de forma constante.",
+    "cap_virtiendo_aceite": "Virtiendo aceite en la sosa",
+    "cap_revolviendo": "Revolviendo y incorporando",
+
+    "paso3": "<b>Espesamiento:</b> La mezcla fue cambiando de aspecto, pasando de líquida a una textura más cremosa.",
+    "cap_textura": "Textura dela mezcla",
+    "cap_espesando": "Espesando la mezcla",
+
+    "paso4": "<b>Adición de aroma:</b> Se incorporó la fragancia de eucalipto. Aunque el olor mejoró, aún quedaba un fondo perceptible del olor fuerte del NaOH.",
+    "cap_aroma": "Añadiendo Aroma",
+
+    "paso5": "<b>Moldeado:</b> La mezcla se vertió en moldes y se dejó reposar.",
+    "cap_mold1": "Viritendo mezcla en los moldes",
+    "cap_mold2": "Mezcla vertida en los moldes",
+    "paso6": "<b>Curado:</b>El jabón se dejó secar durante varias semanas, lo que permitió que adquiriera mayor dureza y un aroma más agradable.",
+    "cap_res_final": "Resultado final",
+    "cap_reposo": "Jabones en reposo",
+
+    "obs_tit": "Observaciones, análisis y conclusiones",
+    "obs_sub": "Observaciones:",
+    "obs1": "Al verter el NaOH en el agua, se produjo un aumento rápido de temperatura, burbujeo y liberación de vapores, evidenciando la naturaleza exotérmica de la disolución.",
+    "obs2": "El olor inicial era fuerte y penetrante, típico de un compuesto alcalino, provocando una ligera irritación en la nariz si se acercaba demasiado.",
+    "obs3": "La mezcla con el aceite generó un cambio de color y consistencia, pasando de un tono amarillento a una emulsión más opaca y uniforme.",
+    "obs4": "Durante la agitación, se observó cómo aumentaba la viscosidad, señal de que la saponificación estaba en marcha.",
+    "obs5": "La fragancia de eucalipto suavizó el olor, pero en la etapa inicial seguía presente un matiz alcalino.",
+    "obs6": "Con el paso de los días de curado, el jabón adquirió mayor dureza, el aroma se volvió más fresco y agradable, y la textura se hizo más firme y compacta.",
+
+    "estilos_tit": "Quedaron 3 estilos de Jabones:",
+    "estilo1_cap": "Estilo 1",
+    "estilo2_cap": "Estilo 2",
+    "estilo3_cap": "Estilo 3",
+
+    "analisis_tit": "Análisis y explicación científica:",
+    "analisis_p1": "La saponificación observada es consecuencia de una reacción ácido-base en medio básico, donde el NaOH rompe los enlaces éster de los triglicéridos, liberando glicerina y formando las sales sódicas (jabón). La liberación de calor en la disolución del NaOH es un fenómeno exotérmico causado por la alta energía liberada al hidratar los iones sodio e hidróxido. El olor desagradable inicial se debe a compuestos volátiles y al NaOH no neutralizado, que desaparecen tras el curado. Este proceso también endurece el jabón y mejora su estabilidad, asegurando que no queden restos de sosa libre que puedan dañar la piel.",
+
+    "conc_tit": "Conclusiones:",
+    "conc1": "El experimento demuestra la importancia de las mediciones precisas para obtener un jabón balanceado y seguro.",
+    "conc2": "La manipulación del NaOH exige medidas de seguridad estrictas y un orden riguroso en el procedimiento.",
+    "conc3": "El curado es esencial para garantizar un aroma agradable y un producto libre de sosa residual.",
+    "conc4": "La experiencia permitió aplicar conocimientos de química en un contexto práctico, reforzando conceptos como reacciones ácido-base, exotermicidad y la importancia del tiempo en procesos químicos.",
+    "volver": "volver arriba",
+    "pie_de_html": "FIN",
+    "galeria_link": "GALERÍA DE IMAGENES"
+  },
+  "en": {
+    "title_subhtml": "SOAP EXPERIMENT",
+    "volver_ppal": "Back to the main page",
+    "expj_titulo": "SOAP EXPERIMENT",
+
+    "fund_tit": "Theoretical foundations and objectives of the experiment",
+    "fund_intro": "This project consists of making handmade soap through the saponification process using sodium hydroxide (NaOH). The main objective is to practically understand how this chemical reaction occurs and how a mixture of fats or oils is transformed into a useful and safe product for personal hygiene.",
+    "marco_tit": "Theoretical framework:",
+    "marco_p1": "Saponification is a base-catalyzed hydrolysis reaction in which triglycerides (fats or oils) react with a strong base (in this case, NaOH) to produce glycerin and soap, which are sodium salts of fatty acids. The general reaction can be represented as:",
+    "marco_p2": "This process is exothermic and requires caution, since dissolving NaOH in water releases a large amount of heat.<br>Historically, soap was made with ashes (a source of hydroxide) and animal fats, being an essential product for hygiene. Today, handmade soap is still appreciated for its moisturizing properties and for not containing harsh synthetic additives.",
+
+    "obj_tit": "Specific objectives:",
+    "obj1": "Recognize the role of NaOH as a strong base in the saponification reaction.",
+    "obj2": "Analyze the physical and chemical changes that occur during the process.",
+    "obj3": "Apply precise measurements to ensure a balanced final product.",
+    "obj4": "Develop safe handling skills for corrosive reagents.",
+
+    "conceptos_tit": "Key concepts:",
+    "c1_base": "<b>Strong base:</b> Substance that releases hydroxide ions (OH⁻) in solution and neutralizes acids.",
+    "c2_trigli": "<b>Triglycerides:</b> Molecules made up of glycerol and three fatty acids.",
+    "c3_exoterm": "<b>Exothermic reaction:</b> Process that releases energy as heat.",
+    "c4_curado": "<b>Soap curing:</b> Resting period that allows the reaction to finish and the excess water to evaporate.",
+
+    "proc_tit": "Experimental procedure:",
+    "mat_tit": "Materials:",
+    "mat1": "NaOH (caustic soda).",
+    "mat2": "Cooking oil, used or new (strained and clean), 1 L.",
+    "mat3": "Water.",
+    "mat4": "Eucalyptus fragrance.",
+    "mat5": "Heat-resistant container.",
+    "mat6": "15 ml plastic spoon (for the at-home trial).",
+    "mat7": "Two-pan balance (used in the lab to measure lye precisely).",
+    "mat8": "Whisk or wooden/plastic paddle.",
+    "mat9": "Soap molds.",
+    "mat10": "Gloves and safety goggles.",
+
+    "dif_tit": "Differences between lab and home:",
+    "dif_p1": "In the laboratory, the NaOH measurement was simulated with sodium bicarbonate and a two-pan balance to obtain exact gram values. At home, the experiment was replicated using a 15 ml plastic spoon as a reference due to the lack of a two-pan balance, which was less precise but sufficient for demonstration purposes.",
+
+    "fig_balanza_cap": "Two-arm balance",
+    "fig_cuchara_cap": "15 ml spoon",
+
+    "pasos_tit": "Steps:",
+    "paso1": "<b>Preparation of the NaOH solution:</b> In a heat-resistant container, NaOH was carefully poured into the water (never the other way around) to avoid violent reactions. An immediate release of heat and vapor was observed.",
+    "cap_sosa_agua": "Lye and water",
+    "cap_disolviendo_sosa": "Dissolving the lye",
+
+    "paso2": "<b>Mixing with oil:</b> Once the temperature dropped a little, the oil was added and constant stirring began.",
+    "cap_virtiendo_aceite": "Pouring oil into the lye",
+    "cap_revolviendo": "Stirring and combining",
+
+    "paso3": "<b>Thickening:</b> The mixture changed in appearance, going from liquid to a creamier texture.",
+    "cap_textura": "Texture of the mixture",
+    "cap_espesando": "Thickening the mixture",
+
+    "paso4": "<b>Addition of fragrance:</b> Eucalyptus fragrance was added. Although the smell improved, a strong NaOH note was still noticeable.",
+    "cap_aroma": "Adding fragrance",
+
+    "paso5": "<b>Molding:</b> The mixture was poured into molds and left to rest.",
+    "cap_mold1": "Pouring mixture into the molds",
+    "cap_mold2": "Mixture poured into the molds",
+    "paso6": "<b>Curing:</b> The soap was left to dry for several weeks, which allowed it to become harder with a more pleasant scent.",
+    "cap_res_final": "Final result",
+    "cap_reposo": "Soaps resting",
+
+    "obs_tit": "Observations, analysis and conclusions",
+    "obs_sub": "Observations:",
+    "obs1": "When NaOH was poured into water, there was a rapid increase in temperature, bubbling and vapor release, showing the exothermic nature of the dissolution.",
+    "obs2": "The initial smell was strong and pungent, typical of an alkaline compound, causing slight nasal irritation if too close.",
+    "obs3": "Mixing with oil produced a change in color and consistency, from a yellowish tone to a more opaque and uniform emulsion.",
+    "obs4": "During stirring, viscosity increased, indicating that saponification was underway.",
+    "obs5": "The eucalyptus fragrance softened the smell, but an alkaline note was still present in the initial stage.",
+    "obs6": "As curing days passed, the soap became harder, the aroma fresher and more pleasant, and the texture firmer and more compact.",
+
+    "estilos_tit": "We ended up with 3 soap styles:",
+    "estilo1_cap": "Style 1",
+    "estilo2_cap": "Style 2",
+    "estilo3_cap": "Style 3",
+
+    "analisis_tit": "Analysis and scientific explanation:",
+    "analisis_p1": "The observed saponification results from an acid–base reaction in a basic medium, where NaOH breaks the ester bonds of triglycerides, releasing glycerin and forming sodium salts (soap). The heat released when dissolving NaOH is an exothermic phenomenon caused by the high energy released when hydrating sodium and hydroxide ions. The initial unpleasant odor is due to volatile compounds and unneutralized NaOH, which disappear after curing. This process also hardens the soap and improves its stability, ensuring no free lye remains that could harm the skin.",
+
+    "conc_tit": "Conclusions:",
+    "conc1": "The experiment shows the importance of precise measurements to obtain a balanced and safe soap.",
+    "conc2": "Handling NaOH requires strict safety measures and a rigorous order in the procedure.",
+    "conc3": "Curing is essential to ensure a pleasant aroma and a product free of residual lye.",
+    "conc4": "The experience enabled the application of chemistry knowledge in a practical context, reinforcing concepts such as acid–base reactions, exothermicity, and the importance of time in chemical processes.",
+    "volver": "back to top",
+    "pie_de_html": "END",
+    "galeria_link": "IMAGE GALLERY"
+  }
+}
