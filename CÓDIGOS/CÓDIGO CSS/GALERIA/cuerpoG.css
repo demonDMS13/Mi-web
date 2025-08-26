@@ -1,0 +1,50 @@
+/* ======= GALERÍA ======= */
+.galeria {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.titulo-galeria {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+    text-shadow: 0.5px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Grid flexible */
+.grid-galeria {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cada artículo */
+.grid-galeria article {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-galeria article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Imágenes */
+.grid-galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Texto bajo imágenes */
+.grid-galeria figcaption {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    font-style: italic;
+    color: #444;
+}

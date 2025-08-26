@@ -1,0 +1,24 @@
+{
+  "es": {
+    "title": "Galería de imágenes",
+    "volver": "volver",
+    "galeria_titulo": "GALERÍA DE IMÁGENES",
+    "equipo_titulo": "IMAGENES GENERALES",
+    "equipo_desc": "Equipo de trabajo",
+    "volumen_desc": "Midiendo volúmenes",
+    "aceite_desc": "Colando aceite",
+    "grafica_desc": "Gráfica de ancho vs largo",
+    "footer_text": "GRACIAS POR VISITAR NUESTRA WEB"
+  },
+  "en": {
+    "title": "Image Gallery",
+    "volver": "back",
+    "galeria_titulo": "IMAGE GALLERY",
+    "equipo_titulo": "IMAGE GENERAL",
+    "equipo_desc": "Work team",
+    "volumen_desc": "Measuring volumes",
+    "aceite_desc": "Filtering oil",
+    "grafica_desc": "Width vs length graph",
+    "footer_text": "THANK YOU FOR VISITING OUR WEBSITE"
+  }
+}

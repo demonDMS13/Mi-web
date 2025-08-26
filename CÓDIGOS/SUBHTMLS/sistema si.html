@@ -1,42 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <title data-key="title_si">SISTEMA INTERNACIONAL DE UNIDADES (SI)</title>
+
     <link rel="stylesheet" href="../CÓDIGO CSS/SI/headerFooterSI.css">
     <link rel="stylesheet" href="../CÓDIGO CSS/SI/containers/bodySI.css">
-    <meta charset="UTF-8">
-    <title>Document</title>
+
+    <!-- MathJax configurado -->
+    <script>
+      window.MathJax = {
+        startup: { typeset: false },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        },
+        options: {
+          skipHtmlTags: ['script','noscript','style','textarea','pre','code']
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
 <body>
+
+    <!-- ====== header ====== -->
     <header>
         <section>
             <article>
-                <a href="../../index.html" id="volver">Volver a la página principal</a>
+                <a href="../../index.html" id="volver" data-key="volver">Volver a la página principal</a>
             </article>
             <article>
-                    <h1>SISTEMA INTERNACIONAL <br>DE UNIDADES (SI)</h1>
+                <h1 data-key="si_main_title">SISTEMA INTERNACIONAL <br>DE UNIDADES (SI)</h1>
             </article>
             <article>
                 <img src="../../MULTIMEDIA/IMAGENES/LOGO_INSIGNIA/id_logo.png" alt="Logo del ID" id="logo" />
             </article>
         </section>
     </header>
-    <section class="containerSI">
-        <article>
-            <h2>Introducción</h2>
-            <p>El Sistema Internacional de Unidades (SI) es el sistema de unidades más utilizado en el mundo. Se basa en siete unidades base y se utiliza en la mayoría de los campos científicos y técnicos.</p>
+
+    <!-- ====== contenido ====== -->
+    <main class="containerSI" id="containerSI">
+
+        <!-- Introducción -->
+        <article class="card" id="intro">
+            <h2 data-key="si_intro_title">Introducción al Sistema Internacional (SI) y la base para comprenderlo</h2>
+            <p data-key="si_intro_p1">Medir es comparar una <strong>magnitud física</strong> con una unidad previamente establecida para asignarle un valor numérico. La medición estandarizada es el lenguaje de la ciencia, la industria y el comercio: sin unidades comunes no habría interoperabilidad ni precisión.</p>
+            <p data-key="si_intro_p2">Historia breve: a lo largo del tiempo surgieron varios sistemas locales (pies, codos, varas). Para evitar confusiones se creó el sistema métrico y, más tarde, el <em>Sistema Internacional (SI)</em>, adoptado por la CGPM en 1960.</p>
+
+            <div class="boxed">
+                <h3 data-key="si_que_es_medir">¿Qué es medir?</h3>
+                <p data-key="si_que_es_medir_p">Medir es comparar una magnitud con una unidad patrón y expresar cuántas veces cabe esa unidad en la magnitud. Ejemplos prácticos: cocinar (volumen/peso), medicina (temperatura, presión), ingeniería (longitudes, tiempos).</p>
+            </div>
+
+            <div class="boxed">
+                <h3 data-key="si_fund_med">Fundamentos de la medición</h3>
+                <ul>
+                    <li data-key="si_fund_prec">Precisión y exactitud.</li>
+                    <li data-key="si_fund_traz">Trazabilidad: una medida debe poder relacionarse con patrones nacionales/internacionales.</li>
+                    <li data-key="si_fund_coher">Unidades coherentes: facilitan conversiones sin errores.</li>
+                </ul>
+            </div>
         </article>
-        <article>
-            <h2>Unidades Base</h2>
+
+        <!-- Unidades -->
+        <article class="card" id="unidades">
+            <h2 data-key="si_unidades_title">Unidades base y múltiplos</h2>
+            <p data-key="si_unidades_intro">El SI define <strong>siete unidades base</strong> de las que derivan todas las demás.</p>
+
+            <table class="si-table" aria-label="Tabla unidades SI">
+                <thead>
+                    <tr>
+                        <th data-key="tbl_mag">Magnitud</th>
+                        <th data-key="tbl_unidad">Unidad SI</th>
+                        <th data-key="tbl_simbolo">Símbolo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-key="mag_long">Longitud</td><td data-key="unidad_metro">metro</td><td>m</td></tr>
+                    <tr><td data-key="mag_masa">Masa</td><td data-key="unidad_kg">kilogramo</td><td>kg</td></tr>
+                    <tr><td data-key="mag_tiempo">Tiempo</td><td data-key="unidad_seg">segundo</td><td>s</td></tr>
+                    <tr><td data-key="mag_corriente">Corriente eléctrica</td><td data-key="unidad_amp">amperio</td><td>A</td></tr>
+                    <tr><td data-key="mag_temp">Temperatura termodinámica</td><td data-key="unidad_kelvin">kelvin</td><td>K</td></tr>
+                    <tr><td data-key="mag_sustancia">Cantidad de sustancia</td><td data-key="unidad_mol">mol</td><td>mol</td></tr>
+                    <tr><td data-key="mag_luz">Intensidad luminosa</td><td data-key="unidad_cd">candela</td><td>cd</td></tr>
+                </tbody>
+            </table>
+
+            <h3 data-key="si_prefijos_title">Prefijos (múltiplos y submúltiplos)</h3>
+            <div class="prefijos">
+                <table class="pref-table" aria-label="Tabla prefijos SI">
+                    <thead>
+                        <tr>
+                            <th data-key="prefijo">Prefijo</th>
+                            <th data-key="simbolo">Símbolo</th>
+                            <th data-key="factor">Factor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td data-key="pref_kilo">kilo</td><td>k</td><td>10³</td></tr>
+                        <tr><td data-key="pref_hecto">hecto</td><td>h</td><td>10²</td></tr>
+                        <tr><td data-key="pref_deca">deca</td><td>da</td><td>10¹</td></tr>
+                        <tr><td data-key="pref_deci">deci</td><td>d</td><td>10⁻¹</td></tr>
+                        <tr><td data-key="pref_centi">centi</td><td>c</td><td>10⁻²</td></tr>
+                        <tr><td data-key="pref_mili">mili</td><td>m</td><td>10⁻³</td></tr>
+                        <tr><td data-key="pref_micro">micro</td><td>μ</td><td>10⁻⁶</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="boxed">
+                <h4 data-key="si_conv_example_title">Ejemplo de conversión</h4>
+                <p data-key="si_conv_example_p">Convertir <strong>25 kg</strong> a gramos:</p>
+                <div class="latex-block">
+                    $$25\ \mathrm{kg}\ \times\ \dfrac{1000\ \mathrm{g}}{1\ \mathrm{kg}} \;=\; 25000\ \mathrm{g}\;=\;2.5\times10^{4}\ \mathrm{g}$$
+                </div>
+            </div>
+        </article>
+
+        <!-- Masa y peso -->
+        <article class="card" id="masaPeso">
+            <h2 data-key="si_masa_title">Masa y peso</h2>
+            <div class="two-col">
+                <div>
+                    <h3 data-key="si_masa_def">Definición de masa</h3>
+                    <p data-key="si_masa_p">La masa es la cantidad de materia de un cuerpo; es una propiedad intrínseca y no depende de la ubicación. Unidad SI: <strong>kilogramo (kg)</strong>.</p>
+                </div>
+                <div>
+                    <h3 data-key="si_peso_def">Definición de peso</h3>
+                    <p data-key="si_peso_p">El peso es la fuerza que ejerce la gravedad sobre una masa: <strong>P = m·g</strong>. Unidad: newton (N).</p>
+                    <div class="latex-block">
+                        $$P = m \cdot g$$
+                        $$P(60\ \mathrm{kg}) = 60\ \mathrm{kg}\times 9.81\ \mathrm{m/s^2} = 588.6\ \mathrm{N}$$
+                    </div>
+                </div>
+            </div>
+
+            <h3 data-key="si_masa_dif">Diferencias clave</h3>
             <ul>
-                <li>Metro (m) - Unidad de longitud</li>
-                <li>Kilogramo (kg) - Unidad de masa</li>
-                <li>Segundo (s) - Unidad de tiempo</li>
-                <li>Amperio (A) - Unidad de corriente eléctrica</li>
-                <li>Kelvin (K) - Unidad de temperatura termodinámica</li>
-                <li>Mole (mol) - Unidad de cantidad de sustancia</li>
-                <li>Candela (cd) - Unidad de intensidad luminosa</li>
+                <li data-key="si_masa_dif1"><strong>Masa</strong>: cantidad de materia — constante (kg).</li>
+                <li data-key="si_masa_dif2"><strong>Peso</strong>: fuerza por gravedad — varía con la gravedad (N).</li>
+            </ul>
+
+            <h3 data-key="si_como_medir">Cómo medirlos</h3>
+            <ul>
+                <li data-key="si_medir_masa"><strong>Masa</strong>: balanzas (mecánicas, electrónicas).</li>
+                <li data-key="si_medir_peso"><strong>Peso</strong>: dinamómetros o básculas calibradas.</li>
             </ul>
         </article>
-    </section>
+
+        <!-- Volumen -->
+        <article class="card" id="volumen">
+            <h2 data-key="si_volumen_title">Volumen</h2>
+            <p data-key="si_volumen_def">El volumen es el espacio ocupado por un cuerpo. Unidad SI: <strong>metro cúbico (m³)</strong>. Para líquidos se usan litros (L) — 1 L = 1×10⁻³ m³.</p>
+
+            <h3 data-key="si_medir_vol">Medición de volúmenes</h3>
+            <ul>
+                <li data-key="si_vol_solid_reg">Sólidos regulares: fórmulas geométricas.</li>
+                <li data-key="si_vol_liquidos">Líquidos: probetas, pipetas, matraces.</li>
+                <li data-key="si_vol_irreg">Sólidos irregulares: <em>desplazamiento de agua</em>.</li>
+            </ul>
+
+            <div class="latex-block">
+                <strong data-key="si_desplaz">Ejemplo — desplazamiento:</strong>
+                $$V_{\text{object}} = V_e - V_s$$
+            </div>
+        </article>
+
+        <!-- Densidad -->
+        <article class="card" id="densidad">
+            <h2 data-key="si_dens_title">Densidad</h2>
+            <p data-key="si_dens_def">La densidad es la masa por unidad de volumen. Fórmula:</p>
+            <div class="latex-block">
+                $$D = \dfrac{m}{V}$$
+                <small data-key="si_dens_unidades">(ρ en kg/m³, m en kg, V en m³)</small>
+            </div>
+            <p data-key="si_dens_med">Ejemplo práctico:</p>
+            <div class="latex-block">
+                <span data-key="si_dens_ejemplo">Sea un cuerpo de 250 g (0.25 kg) y volumen 100 cm³ = 1×10⁻⁴ m³:</span><br>
+                $$D=\dfrac{0.25\ \mathrm{kg}}{1\times10^{-4}\ \mathrm{m^3}} = 2.5\times10^{3}\ \mathrm{kg/m^3}$$
+            </div>
+            <p data-key="si_dens_factores">Factores que afectan la densidad: temperatura (expansión térmica), presión (importante en gases).</p>
+        </article>
+
+        <!-- Temperatura -->
+        <article class="card" id="temperatura">
+            <h2 data-key="si_temp_title">Temperatura</h2>
+            <p data-key="si_temp_def">La temperatura mide el grado de agitación térmica de las partículas. Unidad SI: <strong>kelvin (K)</strong>, aunque en la práctica se usan °C y °F.</p>
+            <h3 data-key="si_temp_escalas">Escalas y conversiones</h3>
+            <div class="latex-block">
+                $$K = ^\circ C + 273.15$$
+                $$^\circ C = K - 273.15$$
+                $$^\circ F = ^\circ C \times \dfrac{9}{5} + 32$$
+                $$^\circ C = (^\circ F - 32) \times \dfrac{5}{9}$$
+            </div>
+            <p data-key="si_temp_ej">Ejemplo: convertir 25 °C a K:</p>
+            <div class="latex-block">
+                $$K = 25 + 273.15 = 298.15\ \mathrm{K}$$
+            </div>
+        </article>
+
+        <!-- Equivalencias -->
+        <article class="card" id="equivalencias">
+            <h2 data-key="si_equiv_title">Equivalencias y factores de conversión</h2>
+            <ul class="equiv-list">
+                <li data-key="equiv_km">1 km = 1000 m</li>
+                <li data-key="equiv_cm">1 cm = 0.01 m</li>
+                <li data-key="equiv_litro">1 L = 0.001 m³</li>
+                <li data-key="equiv_kg">1 kg = 1000 g</li>
+                <li data-key="equiv_cal">1 cal ≈ 4.184 J</li>
+            </ul>
+            <p data-key="si_factores_p">Recuerda: un factor de conversión es una fracción igual a 1 que se usa para cambiar unidades sin alterar el valor físico.</p>
+        </article>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <a data-key="volver_arriba" id="volver_arriba" href="#containerSI">Volver arriba</a>
+    </footer>
+
+    <script src="../CÓDIGO JAVA/java_SI/si.js"></script>
+    <script src="../CÓDIGO JAVA/java_SI/traducciones/traduccion-04.js"></script>
 </body>
 </html>

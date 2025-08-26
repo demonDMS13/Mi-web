@@ -10,13 +10,16 @@ window.MathJax = {
   }
 };
 
-// Cuando cargue el DOM, insertamos un ejemplo de ecuación
+// Cuando cargue el DOM, aplicamos traducciones y renderizamos MathJax
 document.addEventListener("DOMContentLoaded", function() {
-    const eqContainer = document.getElementById("ecuacion-saponificacion");
-    if (eqContainer) {
-        eqContainer.innerHTML = "$$\\mathrm{C_3H_5(OOCR)_3 + 3NaOH \\longrightarrow C_3H_5(OH)_3 + 3RCOONa}$$";
-        if (window.MathJax && window.MathJax.typeset) {
-            window.MathJax.typeset();
-        }
-    }
+  // Si tienes una función de traducción por defecto, la llamas aquí:
+  if (typeof applyTranslations === "function") {
+    applyTranslations("es"); // o el idioma que quieras de inicio
+  }
+
+  // Reprocesar ecuaciones si hay
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    MathJax.typesetClear();
+    MathJax.typesetPromise();
+  }
 });

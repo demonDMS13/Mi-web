@@ -51,3 +51,12 @@ footer {
         margin: 0;
     }
 }
+
+/* Footer más grande en pantallas pequeñas */
+@media (max-width: 767px) {
+    footer {
+        padding: 25px;        /* más espacio interno */
+        line-height: 1.6;     /* más separación entre líneas */
+        font-size: 1.1rem;    /* texto un poco más grande */
+    }
+}

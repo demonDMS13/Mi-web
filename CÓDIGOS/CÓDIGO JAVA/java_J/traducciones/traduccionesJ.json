@@ -8,6 +8,7 @@
     "fund_intro": "El presente proyecto consiste en la elaboración de jabón artesanal mediante el proceso de saponificación usando hidróxido de sodio (NaOH). El objetivo principal es comprender, de manera práctica, cómo ocurre esta reacción química y cómo se transforma una mezcla de grasas o aceites en un producto útil y seguro para la higiene personal.",
     "marco_tit": "Marco teórico:",
     "marco_p1": "La saponificación es una reacción química de tipo hidrólisis básica, en la cual los triglicéridos (grasas o aceites) reaccionan con una base fuerte (en este caso, NaOH) para producir glicerina y jabón, que son sales sódicas de ácidos grasos. La ecuación general de la reacción puede representarse como:",
+    "ecuacionSaponificacion": "$$\\mathrm{Aceite/Grasa\\ (Triglicéridos)} + \\mathrm{NaOH} \\longrightarrow \\mathrm{Glicerina} + \\mathrm{Jabón}$$",
     "marco_p2": "Este proceso es exotérmico y requiere precaución, ya que la disolución del NaOH en agua libera gran cantidad de calor.<br>Históricamente, el jabón se elaboraba con cenizas (fuente de hidróxido) y grasas animales, siendo un producto fundamental para la higiene. Hoy en día, el jabón artesanal sigue siendo apreciado por sus propiedades humectantes y por no contener aditivos sintéticos agresivos.",
 
     "obj_tit": "Objetivos específicos:",
@@ -36,6 +37,7 @@
     "mat10": "Guantes y gafas de seguridad.",
 
     "dif_tit": "Diferencias entre laboratorio y casa:",
+    "julio": "15 al 18 de Julio.",
     "dif_p1": "En el laboratorio, la medición del NaOH se simulo con bircabonato de sodio y una balanza de dos platillos para obtener valores exactos en gramos. En casa, se replicó el experimento usando una cuchara de plástico de 15 ml como referencia por falta de la balanza de dos platillos, lo que resultó menos preciso pero suficiente para fines demostrativos.",
 
     "fig_balanza_cap": "Balanza de dos brazos",
@@ -61,6 +63,7 @@
     "cap_mold1": "Viritendo mezcla en los moldes",
     "cap_mold2": "Mezcla vertida en los moldes",
     "paso6": "<b>Curado:</b>El jabón se dejó secar durante varias semanas, lo que permitió que adquiriera mayor dureza y un aroma más agradable.",
+    "julio_agosto": "26 de julio al 19 de agosto.",
     "cap_res_final": "Resultado final",
     "cap_reposo": "Jabones en reposo",
 
@@ -99,6 +102,7 @@
     "fund_intro": "This project consists of making handmade soap through the saponification process using sodium hydroxide (NaOH). The main objective is to practically understand how this chemical reaction occurs and how a mixture of fats or oils is transformed into a useful and safe product for personal hygiene.",
     "marco_tit": "Theoretical framework:",
     "marco_p1": "Saponification is a base-catalyzed hydrolysis reaction in which triglycerides (fats or oils) react with a strong base (in this case, NaOH) to produce glycerin and soap, which are sodium salts of fatty acids. The general reaction can be represented as:",
+    "ecuacionSaponificacion": "$$\\mathrm{Oil/Fat\\ (Triglycerides)} + \\mathrm{NaOH} \\longrightarrow \\mathrm{Glycerin} + \\mathrm{Soap}$$",
     "marco_p2": "This process is exothermic and requires caution, since dissolving NaOH in water releases a large amount of heat.<br>Historically, soap was made with ashes (a source of hydroxide) and animal fats, being an essential product for hygiene. Today, handmade soap is still appreciated for its moisturizing properties and for not containing harsh synthetic additives.",
 
     "obj_tit": "Specific objectives:",
@@ -127,6 +131,7 @@
     "mat10": "Gloves and safety goggles.",
 
     "dif_tit": "Differences between lab and home:",
+    "julio": "July 15-18",
     "dif_p1": "In the laboratory, the NaOH measurement was simulated with sodium bicarbonate and a two-pan balance to obtain exact gram values. At home, the experiment was replicated using a 15 ml plastic spoon as a reference due to the lack of a two-pan balance, which was less precise but sufficient for demonstration purposes.",
 
     "fig_balanza_cap": "Two-arm balance",
@@ -152,6 +157,7 @@
     "cap_mold1": "Pouring mixture into the molds",
     "cap_mold2": "Mixture poured into the molds",
     "paso6": "<b>Curing:</b> The soap was left to dry for several weeks, which allowed it to become harder with a more pleasant scent.",
+    "julio_agosto": "July 26 to August 19.",
     "cap_res_final": "Final result",
     "cap_reposo": "Soaps resting",
 

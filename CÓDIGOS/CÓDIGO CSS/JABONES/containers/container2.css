@@ -5,7 +5,7 @@
     flex-wrap: nowrap; /* Para que bajen a otra fila si no caben */
 }
 
-.container2 img{
+.container2 img {
     max-width: 100%;
     height: auto;
     display: block;

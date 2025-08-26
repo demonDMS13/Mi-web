@@ -1,8 +1,111 @@
+/* bodySI.css — estilos del cuerpo del SI (tarjetas, tablas, latex, responsive) */
+
 .containerSI {
-    width: 920.5px;
-    margin: 0 auto;
+    max-width: 1100px;
+    margin: 4.5rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
-section article h2 {
-    font-size: 2rem;
+/* tarjetas */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 6px 18px rgba(11,20,30,0.06);
+    border-left: 6px solid rgba(60,112,73,0.9); /* acento verde */
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(11,20,30,0.10);
+}
+
+/* encabezados dentro del cuerpo */
+.containerSI h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.9rem;
+    margin: 0 0 0.8rem 0;
+    color: #334;
+}
+
+.containerSI h3 {
+    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    color: #2f4f3a;
+}
+
+/* boxed: pequeños bloques con fondo suave */
+.boxed {
+    background: #f7fbf8;
+    border-radius: 8px;
+    padding: 0.9rem;
+    margin-top: 1rem;
+    border: 1px solid rgba(60,112,73,0.06);
+}
+
+/* tablas responsive */
+.si-table, .pref-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.8rem 0 1rem 0;
+}
+
+.si-table th, .si-table td,
+.pref-table th, .pref-table td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.si-table thead th, .pref-table thead th {
+    background: linear-gradient(90deg, rgba(60,112,73,0.95), rgba(52,98,64,0.95));
+    color: white;
+    font-weight: 600;
+}
+
+/* dos columnas para secciones relacionadas */
+.two-col {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+    margin-top: 0.6rem;
+}
+.two-col > div { flex: 1; }
+
+/* bloques latex */
+.latex-block {
+    background: #ffffff;
+    border: 1px dashed rgba(60,112,73,0.15);
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.05rem;
+}
+
+/* listas y textos */
+.containerSI p, .containerSI li {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* equivalencias */
+.equiv-list li { margin-bottom: 0.4rem; }
+
+/* responsive */
+@media (max-width: 900px) {
+    .two-col { flex-direction: column; }
+    .containerSI { margin: 3rem 0; padding: 0 1rem; }
+    .containerSI h2 { font-size: 1.6rem; }
+    .latex-block { font-size: 0.98rem; }
+}
+
+@media (max-width: 480px) {
+    .containerSI { padding: 0 0.8rem; margin: 2.5rem 0; }
+    .card { padding: 1.1rem; }
+    header h1 { font-size: 1.2rem; } /* no romper header pero asegurar visibilidad */
 }

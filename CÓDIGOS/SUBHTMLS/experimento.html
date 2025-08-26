@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="../CÓDIGO CSS/JABONES/headerFooterJ.css">
     <link rel="stylesheet" href="../CÓDIGO CSS/JABONES/containers/imgs/img.css" >
     <link rel="stylesheet" href="../CÓDIGO CSS/JABONES/containers/container2.css">
-    <script>
-        window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
-        svg: { fontCache: 'global' }
+    <link rel="stylesheet" href="../CÓDIGO CSS/JABONES/animaciones/animaciones.css">
+<script>
+    window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']], processEscapes: true },
+    svg: { fontCache: 'global' },
+    options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
         };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
@@ -54,7 +56,7 @@
                 triglicéridos (grasas o aceites) reaccionan con una base fuerte (en este caso, NaOH) 
                 para producir glicerina y jabón, que son sales sódicas de ácidos grasos.
                 La ecuación general de la reacción puede representarse como:</span>
-                <div class="latex1">$$\mathrm{Aceite/Grasa\ (Triglicéridos)} + \mathrm{NaOH} \longrightarrow \mathrm{Glicerina} + \mathrm{Jabón}$$</div>
+                <div data-key="ecuacionSaponificacion" class="latex1"></div>
             </p>
             <p data-key="marco_p2">
                 Este proceso es exotérmico y requiere precaución, ya que la disolución del NaOH en agua libera gran cantidad de calor.
@@ -65,6 +67,7 @@
             </p>
             <figure class="container2">
                 <img id="img_saponificacion" src="../../MULTIMEDIA/IMAGENES/experimento/fundamentos/marcoteorico/jabones-y-saponificaion.jpg" >
+                <figcaption data-key="saponificacion">Saponificación</figcaption>
             </figure>
             <h3 data-key="conceptos_tit">Conceptos clave:</h3>
             <ul>
@@ -90,6 +93,7 @@
                 <li data-key="mat10">Guantes y gafas de seguridad.</li>
             </ul>
             <h3 data-key="dif_tit">Diferencias entre laboratorio y casa:</h3>
+            <h4 data-key="julio">15 al 18 de julio</h4>
             <p data-key="dif_p1">
                 En el laboratorio, la medición del NaOH se simulo con bircabonato de sodio y una balanza de dos platillos para obtener valores exactos en gramos. 
                 En casa, se replicó el experimento usando una cuchara de plástico de 15 ml como referencia por falta de la balanza de dos platillos, 
@@ -106,6 +110,7 @@
                 </figure>
             </div>
             <h3 data-key="pasos_tit">Pasos:</h3>
+            <h4>24/07/2025</h4>
             <ul>
                 <li data-key="paso1"><b>Preparación de la solución de NaOH:</b> En un recipiente resistente, se vertió cuidadosamente el NaOH en el agua (nunca al revés) para evitar reacciones violentas. Se observó una liberación inmediata de calor y vapor.</li>
                 <div class="agrup">
@@ -167,6 +172,7 @@
                     </figure>
                 </div>
                 <li data-key="paso6"><b>Curado:</b>El jabón se dejó secar durante varias semanas, lo que permitió que adquiriera mayor dureza y un aroma más agradable.</li>
+                <h4 data-key="julio_agosto">26 de julio a 19 de agosto</h4>
                 <div class="agrup">
                     <figure>
                         <img id="sosaCurado" src="../../MULTIMEDIA/IMAGENES/experimento/experimentacion/pasos/curado/jabon.jpg" >
@@ -239,5 +245,6 @@
 <script src="../CÓDIGO JAVA/java_J/latex.js"></script>
 <script src="../CÓDIGO JAVA/java_J/video.js"></script>
 <script src="../CÓDIGO JAVA/java_J/traducciones/02-traducciones.js"></script>
+<script src="../CÓDIGO JAVA/java_J/animaciones/01-animaciones.js"></script>
 </body>
 </html>

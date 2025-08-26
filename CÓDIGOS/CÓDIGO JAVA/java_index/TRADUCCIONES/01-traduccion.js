@@ -1,15 +1,11 @@
-/* CÓDIGOS/CÓDIGO JAVA/java_index/TRADUCCIONES/01-traduccion.js */
 (function () {
-  // Carpeta donde está ESTE archivo JS
   const scriptEl = document.currentScript || (function () {
     const s = document.getElementsByTagName('script');
     return s[s.length - 1];
   })();
   const baseUrl = scriptEl && scriptEl.src ? scriptEl.src.substring(0, scriptEl.src.lastIndexOf('/')) : '.';
 
-  // JSON posibles en la MISMA carpeta del JS
   const tryFiles = ['traduccion.json', 'traducciones.json', 'translations.json'];
-
   let translations = null;
 
   async function fetchFirstAvailable() {
@@ -36,12 +32,16 @@
       const text = translations[lang][key];
       if (text === undefined) return;
 
-      // Preservar cualquier <a> que ya estuviera dentro (webgrafías)
       const anchorsHtml = Array.from(el.querySelectorAll('a')).map(a => a.outerHTML).join(' ');
       el.innerHTML = text + (anchorsHtml ? ' ' + anchorsHtml : '');
     });
 
-    // Guardar idioma global para todas las páginas
+    // Reprocesar ecuaciones LaTeX
+    if (window.MathJax && window.MathJax.typeset) {
+      MathJax.typeset();
+    }
+
+    // Guardar idioma para todas las páginas
     localStorage.setItem('idioma', lang);
   }
 
@@ -60,13 +60,12 @@
     const langGuardado = localStorage.getItem('idioma') || 'es';
     applyTranslations(langGuardado);
 
-    // Botones por ID (¡ojo al #!)
     const btnEn = document.getElementById('EN');
     const btnEs = document.getElementById('SP');
     if (btnEn) btnEn.addEventListener('click', () => changeLanguage('en'));
     if (btnEs) btnEs.addEventListener('click', () => changeLanguage('es'));
   });
 
-  // Por si quieres cambiar desde consola:
   window.__traduccion = { changeLanguage };
 })();
+
