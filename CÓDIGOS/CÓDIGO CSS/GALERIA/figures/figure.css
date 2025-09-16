@@ -1,3 +1,49 @@
 figure img {
     width: 300px;
 }
+
+/* Team section: large image with side names */
+.team-section {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 0 40px;
+    flex-wrap: wrap;
+}
+.team-figure {
+    margin: 0;
+    text-align: center;
+}
+.team-figure img {
+    width: 520px;
+    max-width: 92vw;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+.team-figure figcaption {
+    margin-top: 8px;
+    font-weight: 600;
+}
+.team-info {
+    max-width: 360px;
+}
+.team-info h2 {
+    margin: 0 0 8px 0;
+}
+.team-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.team-list li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+@media (max-width: 760px) {
+    .team-section { gap: 12px; }
+    .team-figure img { width: 92vw; }
+    .team-info { max-width: 92vw; }
+}

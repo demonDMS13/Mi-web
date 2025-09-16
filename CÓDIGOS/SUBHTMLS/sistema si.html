@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="../CÓDIGO CSS/SI/headerFooterSI.css">
     <link rel="stylesheet" href="../CÓDIGO CSS/SI/containers/bodySI.css">
+    <link rel="stylesheet" href="../CÓDIGO CSS/SI/containers/imgs.css">
 
     <!-- MathJax configurado -->
     <script>
@@ -25,7 +26,7 @@
 </head>
 <body>
 
-    <!-- ====== header ====== -->
+
     <header>
         <section>
             <article>
@@ -52,6 +53,10 @@
             <div class="boxed">
                 <h3 data-key="si_que_es_medir">¿Qué es medir?</h3>
                 <p data-key="si_que_es_medir_p">Medir es comparar una magnitud con una unidad patrón y expresar cuántas veces cabe esa unidad en la magnitud. Ejemplos prácticos: cocinar (volumen/peso), medicina (temperatura, presión), ingeniería (longitudes, tiempos).</p>
+                <figure class="figure-inline">
+                    <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/medir.jpg" alt="Medir" />
+                    <figcaption data-key="fig_medir_caption">Medir: comparar magnitudes con unidades</figcaption>
+                </figure>
             </div>
 
             <div class="boxed">
@@ -63,6 +68,20 @@
                 </ul>
             </div>
         </article>
+
+        <!-- Equivalencias -->
+        <article class="card" id="equivalencias">
+            <h2 data-key="si_equiv_title">Equivalencias y factores de conversión</h2>
+            <ul class="equiv-list">
+                <li data-key="equiv_km">1 km = 1000 m</li>
+                <li data-key="equiv_cm">1 cm = 0.01 m</li>
+                <li data-key="equiv_litro">1 L = 0.001 m³</li>
+                <li data-key="equiv_kg">1 kg = 1000 g</li>
+                <li data-key="equiv_cal">1 cal ≈ 4.184 J</li>
+            </ul>
+            <p data-key="si_factores_p">Recuerda: un factor de conversión es una fracción igual a 1 que se usa para cambiar unidades sin alterar el valor físico.</p>
+        </article>
+
 
         <!-- Unidades -->
         <article class="card" id="unidades">
@@ -126,10 +145,18 @@
                 <div>
                     <h3 data-key="si_masa_def">Definición de masa</h3>
                     <p data-key="si_masa_p">La masa es la cantidad de materia de un cuerpo; es una propiedad intrínseca y no depende de la ubicación. Unidad SI: <strong>kilogramo (kg)</strong>.</p>
+                    <figure class="figure-inline">
+                        <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/masa.jpg" alt="Masa" />
+                        <figcaption data-key="fig_masa_caption">Masa medida con balanza</figcaption>
+                    </figure>
                 </div>
                 <div>
                     <h3 data-key="si_peso_def">Definición de peso</h3>
                     <p data-key="si_peso_p">El peso es la fuerza que ejerce la gravedad sobre una masa: <strong>P = m·g</strong>. Unidad: newton (N).</p>
+                    <figure class="figure-inline figure-small">
+                        <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/peso.jpg" alt="Peso" />
+                        <figcaption data-key="fig_peso_caption">Peso medido con dinamómetro</figcaption>
+                    </figure>
                     <div class="latex-block">
                         $$P = m \cdot g$$
                         $$P(60\ \mathrm{kg}) = 60\ \mathrm{kg}\times 9.81\ \mathrm{m/s^2} = 588.6\ \mathrm{N}$$
@@ -154,6 +181,11 @@
         <article class="card" id="volumen">
             <h2 data-key="si_volumen_title">Volumen</h2>
             <p data-key="si_volumen_def">El volumen es el espacio ocupado por un cuerpo. Unidad SI: <strong>metro cúbico (m³)</strong>. Para líquidos se usan litros (L) — 1 L = 1×10⁻³ m³.</p>
+            <p data-key="si_volumen_intro_p2">El concepto de volumen se extiende desde sólidos ideales hasta fluidos; su medición implica considerar la forma y la escala. En laboratorios se emplean instrumentos calibrados para líquidos y fórmulas geométricas para sólidos regulares; la incertidumbre de medida debe siempre estimarse.</p>
+            <figure class="figure-inline figure-medium">
+                <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/volumen.jpg" alt="Volumen" />
+                <figcaption data-key="fig_volumen_caption">Medición de volumen</figcaption>
+            </figure>
 
             <h3 data-key="si_medir_vol">Medición de volúmenes</h3>
             <ul>
@@ -161,6 +193,10 @@
                 <li data-key="si_vol_liquidos">Líquidos: probetas, pipetas, matraces.</li>
                 <li data-key="si_vol_irreg">Sólidos irregulares: <em>desplazamiento de agua</em>.</li>
             </ul>
+            <figure class="figure-inline figure-medium">
+                <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/volumen_desplazamiento.jpg" alt="Desplazamiento" />
+                <figcaption data-key="fig_vol_despl_caption">Desplazamiento de agua para medir volumen</figcaption>
+            </figure>
 
             <div class="latex-block">
                 <strong data-key="si_desplaz">Ejemplo — desplazamiento:</strong>
@@ -172,6 +208,11 @@
         <article class="card" id="densidad">
             <h2 data-key="si_dens_title">Densidad</h2>
             <p data-key="si_dens_def">La densidad es la masa por unidad de volumen. Fórmula:</p>
+            <p data-key="si_dens_intro_p2">La densidad relaciona propiedades microscópicas (masa atómica, empaquetamiento) con magnitudes macroscópicas. Es sensible a temperatura y presión; por ello, en tablas se especifican las condiciones de referencia.</p>
+            <figure class="figure-inline figure-medium">
+                <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/densidad.jpg" alt="Densidad" />
+                <figcaption data-key="fig_densidad_caption">Densidad: masa por volumen</figcaption>
+            </figure>
             <div class="latex-block">
                 $$D = \dfrac{m}{V}$$
                 <small data-key="si_dens_unidades">(ρ en kg/m³, m en kg, V en m³)</small>
@@ -188,35 +229,34 @@
         <article class="card" id="temperatura">
             <h2 data-key="si_temp_title">Temperatura</h2>
             <p data-key="si_temp_def">La temperatura mide el grado de agitación térmica de las partículas. Unidad SI: <strong>kelvin (K)</strong>, aunque en la práctica se usan °C y °F.</p>
+            <p data-key="si_temp_intro_p2">La temperatura no es una energía, sino una propiedad termodinámica que describe equilibrio térmico. Diferentes escalas se usan por conveniencia histórica y técnica; al convertir entre ellas hay que cuidar las constantes de desplazamiento y los factores de escala.</p>
+            <figure class="figure-inline figure-medium">
+                <img src="../../MULTIMEDIA/IMAGENES/Magnitudes, medir/temperatura.jpg" alt="Temperatura" />
+                <figcaption data-key="fig_temperatura_caption">Medición de temperatura</figcaption>
+            </figure>
             <h3 data-key="si_temp_escalas">Escalas y conversiones</h3>
             <div class="latex-block">
                 $$K = ^\circ C + 273.15$$
                 $$^\circ C = K - 273.15$$
                 $$^\circ F = ^\circ C \times \dfrac{9}{5} + 32$$
                 $$^\circ C = (^\circ F - 32) \times \dfrac{5}{9}$$
+                $$^\circ R = ^\circ F + 459.67$$
+                $$^\circ R = ( ^\circ C + 273.15 ) \times \dfrac{9}{5}$$
             </div>
-            <p data-key="si_temp_ej">Ejemplo: convertir 25 °C a K:</p>
+            <p data-key="si_temp_ej">Ejemplo: convertir 25 °C a K, °F y °R:</p>
             <div class="latex-block">
                 $$K = 25 + 273.15 = 298.15\ \mathrm{K}$$
+                \\
+                $$^{\circ}F = 25 \times \dfrac{9}{5} + 32 = 77\ ^{\circ}\mathrm{F}$$
+                \\
+                $$^{\circ}R = (25 + 273.15) \times \dfrac{9}{5} = 536.67\ ^{\circ}\mathrm{R}$$
             </div>
         </article>
 
-        <!-- Equivalencias -->
-        <article class="card" id="equivalencias">
-            <h2 data-key="si_equiv_title">Equivalencias y factores de conversión</h2>
-            <ul class="equiv-list">
-                <li data-key="equiv_km">1 km = 1000 m</li>
-                <li data-key="equiv_cm">1 cm = 0.01 m</li>
-                <li data-key="equiv_litro">1 L = 0.001 m³</li>
-                <li data-key="equiv_kg">1 kg = 1000 g</li>
-                <li data-key="equiv_cal">1 cal ≈ 4.184 J</li>
-            </ul>
-            <p data-key="si_factores_p">Recuerda: un factor de conversión es una fracción igual a 1 que se usa para cambiar unidades sin alterar el valor físico.</p>
-        </article>
 
     </main>
 
-    <!-- footer -->
+
     <footer>
         <a data-key="volver_arriba" id="volver_arriba" href="#containerSI">Volver arriba</a>
     </footer>

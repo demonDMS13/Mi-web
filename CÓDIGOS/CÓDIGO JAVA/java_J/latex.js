@@ -18,8 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Reprocesar ecuaciones si hay
-  if (window.MathJax && window.MathJax.typesetPromise) {
-    MathJax.typesetClear();
-    MathJax.typesetPromise();
+  if (window.MathJax) {
+    if (MathJax.startup && MathJax.startup.promise) {
+      MathJax.startup.promise.then(() => {
+        if (typeof MathJax.typesetPromise === 'function') {
+          MathJax.typesetPromise().catch(err => console.warn('MathJax typeset error:', err));
+        }
+      }).catch(err => console.warn('MathJax startup failed:', err));
+    } else if (typeof MathJax.typesetPromise === 'function') {
+      MathJax.typesetPromise().catch(err => console.warn('MathJax typeset error:', err));
+    }
   }
 });

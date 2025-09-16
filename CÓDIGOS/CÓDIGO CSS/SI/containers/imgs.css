@@ -1,0 +1,44 @@
+/* Estilos para figuras e imágenes usadas en sistema si.html */
+.figure-inline {
+  display: block;
+  max-width: 520px; /* tamaño máximo razonable para no romper layouts */
+  margin: 0.8em auto; /* centrar y espacio */
+  text-align: center;
+}
+.figure-inline img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: block;
+}
+.figure-inline figcaption {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0.35em;
+}
+@media (min-width: 900px) {
+  .figure-inline { max-width: 720px; }
+}
+@media (max-width: 420px) {
+  .figure-inline { max-width: 320px; }
+  .figure-inline figcaption { font-size: 0.85rem; }
+}
+
+/* Variante pequeña para imágenes que no deben ocupar tanto espacio vertical */
+.figure-small {
+  max-width: 260px;
+  margin-top: 0.4em;
+  margin-bottom: 0.6em;
+}
+@media (max-width: 420px) {
+  .figure-small { max-width: 200px; }
+}
+
+/* Variante intermedia: ligeramente más pequeña que la por defecto */
+.figure-medium {
+  max-width: 420px;
+}
+@media (max-width: 420px) {
+  .figure-medium { max-width: 300px; }
+}

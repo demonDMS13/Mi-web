@@ -9,11 +9,11 @@
 <script>
     window.MathJax = {
     tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']], processEscapes: true },
-    svg: { fontCache: 'global' },
+    chtml: { scale: 1 },
     options: { skipHtmlTags: ['script','noscript','style','textarea','pre','code'] }
         };
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" defer></script>
     <meta charset="UTF-8">
     <title data-key="title_subhtml">Document</title>
 </head>
@@ -56,7 +56,7 @@
                 triglicéridos (grasas o aceites) reaccionan con una base fuerte (en este caso, NaOH) 
                 para producir glicerina y jabón, que son sales sódicas de ácidos grasos.
                 La ecuación general de la reacción puede representarse como:</span>
-                <div data-key="ecuacionSaponificacion" class="latex1"></div>
+                <div data-key="ecuacionSaponificacion" class="latex1">$$\mathrm{Aceite/Grasa\ (Triglic\acute{e}ridos)} + \mathrm{NaOH} \longrightarrow \mathrm{Glicerina} + \mathrm{Jab\acute{o}n}$$</div>
             </p>
             <p data-key="marco_p2">
                 Este proceso es exotérmico y requiere precaución, ya que la disolución del NaOH en agua libera gran cantidad de calor.
@@ -246,5 +246,13 @@
 <script src="../CÓDIGO JAVA/java_J/video.js"></script>
 <script src="../CÓDIGO JAVA/java_J/traducciones/02-traducciones.js"></script>
 <script src="../CÓDIGO JAVA/java_J/animaciones/01-animaciones.js"></script>
+<script>
+// Force MathJax typeset after load in case it's available
+window.addEventListener('load', function(){
+    if(window.MathJax && typeof MathJax.typesetPromise === 'function'){
+        MathJax.typesetPromise().catch(function(err){ console.warn('MathJax typeset error:', err); });
+    }
+});
+</script>
 </body>
 </html>
