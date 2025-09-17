@@ -28,12 +28,33 @@
 
   // helper: intenta typeset cuando MathJax esté listo
   function runMathJaxTypeset() {
-    if (window.MathJax && typeof MathJax.typesetPromise === 'function') {
-      MathJax.typesetClear && MathJax.typesetClear();
-      MathJax.typesetPromise().catch(err => console.warn('MathJax typeset error:', err));
+    if (window.MathJax) {
+      const doTypeset = () => {
+        if (typeof MathJax.typesetPromise === 'function') {
+          MathJax.typesetClear && MathJax.typesetClear();
+          MathJax.typesetPromise().catch(err => console.warn('MathJax typeset error:', err));
+        }
+      };
+
+      if (MathJax.startup && MathJax.startup.promise) {
+        MathJax.startup.promise.then(doTypeset).catch(err => console.warn('MathJax startup failed:', err));
+      } else if (typeof MathJax.typesetPromise === 'function') {
+        doTypeset();
+      }
     } else {
-      // MathJax aún no cargó, reintentar pronto
-      setTimeout(runMathJaxTypeset, 80);
+      // Exponential backoff retry
+      let attempt = 0;
+      const retry = () => {
+        attempt++;
+        if (window.MathJax) {
+          runMathJaxTypeset();
+        } else if (attempt < 8) {
+          setTimeout(retry, 80 * Math.pow(2, attempt));
+        } else {
+          console.warn('MathJax did not load after multiple attempts');
+        }
+      };
+      retry();
     }
   }
 })();

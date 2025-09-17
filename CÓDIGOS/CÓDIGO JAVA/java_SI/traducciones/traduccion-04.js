@@ -43,13 +43,18 @@
     });
 
     // Renderizar LaTeX después de actualizar el HTML
-    if (window.MathJax && window.MathJax.typesetPromise) {
-      // Un pequeño delay asegura que el DOM se haya actualizado
-      setTimeout(() => {
-        MathJax.typesetPromise()
-          .then(() => console.log("MathJax renderizado correctamente"))
-          .catch(err => console.error("Error en MathJax:", err));
-      }, 50);
+    if (window.MathJax) {
+      if (MathJax.startup && MathJax.startup.promise) {
+        MathJax.startup.promise.then(() => {
+          if (typeof MathJax.typesetPromise === 'function') {
+            MathJax.typesetPromise()
+              .then(() => console.log("MathJax renderizado correctamente"))
+              .catch(err => console.error("Error en MathJax:", err));
+          }
+        }).catch(err => console.warn('MathJax startup failed:', err));
+      } else if (typeof MathJax.typesetPromise === 'function') {
+        MathJax.typesetPromise().catch(err => console.error('Error en MathJax:', err));
+      }
     }
 
     // Guardar idioma elegido en todas las páginas
