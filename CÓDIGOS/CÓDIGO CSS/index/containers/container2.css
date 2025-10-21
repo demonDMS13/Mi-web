@@ -85,14 +85,16 @@
 }
 
 .container2 #panelPlastico {
-    height: 330px;
+    height: 320px;
+    width: 300px;
     margin-top: 2.0rem;
-    margin-right: 6rem;
+    margin-right: 3rem;
     border-radius: 10px;
 }
 
 .panelImagenP img#panelPlastico {
-    max-width: 30%;
+    display: float;
+    max-width: 60%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 1rem;
