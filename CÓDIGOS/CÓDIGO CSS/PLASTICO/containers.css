@@ -1,0 +1,49 @@
+.containerP {
+    width: 72%;
+    margin: 0 auto;
+    margin-top: 4rem;
+}
+
+.containerP article {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+}
+
+.containerP figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    border-radius: 6px;
+}
+
+h1,h2,h3 { font-family: 'Merriweather', serif; }
+
+.containerP table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.containerP table td { padding: 0.6rem; border: 1px solid #eee; }
+
+.containerP ol, .containerP ul { padding-left: 1.4rem; }
+
+/* Galería pequeña de dos imágenes */
+.imagenes-plantilla { display: flex; gap: 1rem; align-items: flex-start; }
+.imagenes-plantilla .mini-foto { flex: 1; }
+.imagenes-plantilla .mini-foto img { max-width: 100%; height: 180px; object-fit: cover; border-radius: 6px; }
+.imagenes-plantilla .mini-foto figcaption { text-align: center; font-size: 0.9rem; color: #666; }
+
+/* Sección colaboradores con foto lateral */
+.colaboradores-seccion { display: flex; gap: 1.2rem; align-items: flex-start; margin-top: 1rem; }
+.colaboradores-list { flex: 1; }
+.colaboradores-list ol { padding-left: 1.2rem; }
+.colaboradores-foto { width: 240px; text-align: center; }
+.colaboradores-foto img { width: 220px; height: 220px; object-fit: cover; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+.colaboradores-foto figcaption { font-size: 0.9rem; color: #444; margin-top: 0.4rem; }
+
+@media (max-width: 900px) {
+    .imagenes-plantilla { flex-direction: column; }
+    .colaboradores-seccion { flex-direction: column-reverse; }
+    .colaboradores-foto { width: 100%; }
+    .colaboradores-foto img { width: 80%; height: auto; }
+}

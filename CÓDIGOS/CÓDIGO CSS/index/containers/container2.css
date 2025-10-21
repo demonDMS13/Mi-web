@@ -71,3 +71,41 @@
     margin-top: 6rem;
     margin-right: 4rem;
 }
+
+/* Estilos específicos para Experimento Plásticos */
+.accordion[data-key="plastico-btn"] {
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.12);
+}
+
+
+.accordion[data-key="plastico-btn"] + .panel {
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,245,245,0.95));
+    border: 1px solid rgba(33,134,122,0.15);
+}
+
+.container2 #panelPlastico {
+    height: 330px;
+    margin-top: 2.0rem;
+    margin-right: 6rem;
+    border-radius: 10px;
+}
+
+.panelImagenP img#panelPlastico {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+/* Ajustes responsivos: imagen pasa arriba en pantallas pequeñas */
+@media (max-width: 800px) {
+    .panelImagenP {
+        float: none;
+        text-align: center;
+        margin: 0 auto 1rem auto;
+    }
+    .panelImagenP img#panelPlastico {
+        max-width: 80%;
+    }
+}
