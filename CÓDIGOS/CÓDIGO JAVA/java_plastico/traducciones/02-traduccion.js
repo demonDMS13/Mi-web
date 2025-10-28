@@ -65,8 +65,9 @@
       conc_2: 'La glicerina mejora flexibilidad; la proteína genera mayor resistencia.',
       conc_3: 'Tiempo y temperatura de secado son críticos.',
       conc_4: 'Proyecto promueve alternativas sostenibles al plástico convencional.',
-  colaboradores_tit: 'Colaboradores',
-  footer_text: 'Instituto de Desarrollo - Proyecto Educativo 2025'
+      colaboradores_tit: 'Colaboradores',
+      footer_text: 'Instituto de Desarrollo - Proyecto Educativo 2025',
+      foto_grupo_plastico: 'Grupo de colaraboradores 2025'
     },
     en: {
       plastico_title: 'Bioplastics Project',
@@ -132,6 +133,7 @@
       conc_3: 'Drying time and temperature are critical.',
       conc_4: 'Project promotes sustainable alternatives to conventional plastic.',
       colaboradores_tit: 'Collaborators',
+      foto_grupo_plastico: 'Group photo of the project team',
       footer_text: 'Institute of Development - Educational Project 2025',
       volver_ppal: 'Back to main page'
     }
