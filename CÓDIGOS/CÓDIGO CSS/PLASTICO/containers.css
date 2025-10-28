@@ -47,3 +47,69 @@ h1,h2,h3 { font-family: 'Merriweather', serif; }
     .colaboradores-foto { width: 100%; }
     .colaboradores-foto img { width: 80%; height: auto; }
 }
+
+/* AGREGAR ESTO AL FINAL DE TU CSS - SOLO PARA LAS PRIMERAS 2 IMÁGENES */
+.imagenes-plantilla .mini-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenes-plantilla .mini-foto img {
+    max-width: 85%; /* Más grande que el 100% anterior */
+    height: 200px; /* Un poco más alta */
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto; /* Centrado perfecto */
+}
+
+.imagenes-plantilla .mini-foto figcaption {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+
+.colaboradores-seccion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* Centra todo el contenido */
+    gap: 2rem;
+}
+
+.colaboradores-seccion figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.colaboradores-seccion img {
+    width: 250px; /* Tamaño fijo */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    margin-right: 18rem;
+}
+
+.colaboradores-seccion figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Responsive para móviles */
+@media (max-width: 900px) {
+    .colaboradores-seccion {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .colaboradores-seccion img {
+        width: 80%;
+        height: auto;
+        max-width: 300px;
+    }
+}
